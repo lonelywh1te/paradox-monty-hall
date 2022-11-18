@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+body {
+    background-color: #171717;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction:column;
+    width: auto;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerText {
+    transition: 1s;
+    font-size: 28px;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+}
+
+.counter {
+    font-size: 18px;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+.content {
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+}
+
+.doors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+}
+
+.door1 {
+    transition: 0.5s;
+    background-color: #423F3E;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 5%;
+}
+
+.door2 {
+    transition: 0.5s;
+    background-color: #423F3E;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 5%;
+}
+
+.door3 {
+    transition: 0.5s;
+    background-color: #423F3E;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 5%;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: aliceblue;
+    height: 45vh;
+
+}
+
+.stat {
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    display: table;
+    border-spacing: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    color: white;
+    background-color: #444444;
+    border-radius: 10px;
+}
+
+.firstColumn {
+    text-align: left;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 15px;
+    height: 10vh;
+}
+
+.wiki {
+    font-family: 'Play', sans-serif;
+    color: #635e5c;
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+    .table {
+        transform: scale(0.8);
+    }
+}

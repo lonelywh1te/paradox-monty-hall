@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Парадокс Монти Холла</title>
+</head>
+<body>
+    <div class="header">
+        <div class="headerText" id="headerText">Парадокс Монти Холла</div>
+        <table class="counter">
+            <tr>
+                <td>Количество сыгранных игр: </td>
+                <td class="count" id="totalCount">0</td>
+            </tr>
+        </table>
+    </div>
+    <div class="content">
+        <div class="doors">
+            <div class="door1" id="0" type="button" onclick="chooseDoor(this)"></div>
+            <div class="door2" id="1" type="button" onclick="chooseDoor(this)"></div>
+            <div class="door3" id="2" type="button" onclick="chooseDoor(this)"></div>
+        </div>
+    </div>
+    <div class="stat">
+        <table class="table">
+            <tr>
+                <td></td>
+                <td>Дверь менялась</td>
+                <td>Дверь не менялась</td>
+              </tr>
+              <tr>
+                <td class="firstColumn">Кол-во игр: </td>
+                <td class="table_dChanged" id="table_dChanged">0</td>
+                <td class="table_dNotChanged" id="table_dNotChanged">0</td>
+              </tr>
+              <tr>
+                <td class="firstColumn">Выиграно: </td>
+                <td class="table_changedWon" id="table_changedWon">0</td>
+                <td class="table_nChangedWon" id="table_nChangedWon">0</td>
+              </tr>
+              <tr>
+                <td class="firstColumn">Проиграно: </td>
+                <td class="table_changedLost" id="table_changedLost">0</td>
+                <td class="table_nChangedLost" id="table_nChangedLost">0</td>
+              </tr>
+        </table>
+    </div>
+    <div class="footer">
+        <a class="wiki" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%B4%D0%BE%D0%BA%D1%81_%D0%9C%D0%BE%D0%BD%D1%82%D0%B8_%D0%A5%D0%BE%D0%BB%D0%BB%D0%B0">Как это работает?</a>
+    </div>
+</body>
+</html>
